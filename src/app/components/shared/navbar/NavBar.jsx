@@ -22,13 +22,13 @@ const NavBar = () => {
 
 
     return (
-        <div className="sticky  bg-green-100 w-full  ">
+        <div className=" bg-green-100 w-full  ">
           
 
           <div className='w-13/16 mx-auto'>
      <header className="flex h-16 items-center justify-between px-6">
     <div className="flex items-center gap-3">
-      <p className="font-bold text-4xl"> HattiFY</p>
+      <p className="font-bold text-2xl md:text-4xl"> HattiFY</p>
     </div>
 
     <ul className="flex items-center gap-4">
