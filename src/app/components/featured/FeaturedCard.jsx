@@ -60,7 +60,7 @@ const FeaturedCard = ({ animal }) => {
 
 
                 <div>
-                    <Link href={`/`}>
+                    <Link href={`/animals/${animal.id}`}>
                         <button className="w-full bg-green-900 text-white font-bold py-2 rounded-lg
                          hover:bg-green-700 transition-colors">
                             View Details
