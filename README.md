@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+https://i.ibb.co.com/Jjys4b3J/standin-goat-3.jpg
 
-## Getting Started
+https://i.ibb.co.com/zHRB7K5F/black-big-cow-3.jpg
 
-First, run the development server:
+https://i.ibb.co.com/KjK2Wqv5/goat-2.jpg
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+https://i.ibb.co.com/ychBnDrg/brown-cow-2.jpg
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+https://i.ibb.co.com/HLJ9pMVw/white-goat-1.jpg
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+https://i.ibb.co.com/4ZztnV8M/sheep-1.jpg
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+https://i.ibb.co.com/PfTRTCw/sheep-2.jpg
 
-## Learn More
+https://i.ibb.co.com/p6rBdTbc/brown-cow-3.jpg
 
-To learn more about Next.js, take a look at the following resources:
+https://i.ibb.co.com/xKKwmKFC/cow-big-4-1.jpg
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+https://i.ibb.co.com/PGfvtSF5/camel-1.jpg
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+https://i.ibb.co.com/Nn2yHHfg/cammel-2.jpg
 
-## Deploy on Vercel
+https://i.ibb.co.com/qMps2cnP/white-cow-1.jpg
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
