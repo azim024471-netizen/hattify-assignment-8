@@ -3,7 +3,6 @@ import FeaturedCard from '../components/featured/FeaturedCard';
 
 const Animals = async () => {
     const res = await fetch('https://hattify-assignment-8.vercel.app/data.json');
-    // const res = await fetch('http://localhost:3000/data.json');
 
 
     const animals = await res.json();
@@ -16,18 +15,7 @@ const Animals = async () => {
             <div>
 
    <h1 className="text-2xl font-bold m-4">All Animals</h1>
-
-             <div className="my-6  ">
-
-                <select defaultValue="Short By"
-                 className="select border bg-green-100 border-gray-200 rounded-xl shadow-md px-5 py-2.5" >
-
-                    <option value="All">Short By </option>
-                    <option>From High Price</option>
-                    <option>From Low Price</option>
-                    
-                </select>
-   
+             <div className="my-6 ">
             </div>
    
             </div>

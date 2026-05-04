@@ -1,27 +1,33 @@
-https://i.ibb.co.com/Jjys4b3J/standin-goat-3.jpg
+# HattiFY - Digital Livestock Marketplace
 
-https://i.ibb.co.com/zHRB7K5F/black-big-cow-3.jpg
+HattiFY is a modern e-commerce platform dedicated to the Qurbani season. It provides a secure and user-friendly interface for browsing and booking livestock from trusted sources.
 
-https://i.ibb.co.com/KjK2Wqv5/goat-2.jpg
+## Live Link
 
-https://i.ibb.co.com/ychBnDrg/brown-cow-2.jpg
+https://hattify-assignment-8.vercel.app/
 
-https://i.ibb.co.com/HLJ9pMVw/white-goat-1.jpg
+## Key Features
+* **Diverse Marketplace**: Includes specific categories for Cows, Goats, Sheep, and Camels.
+* **Secure Authentication**: Integrated Google Social Login and email-based authentication via BetterAuth.
+* **Profile Management**: Dedicated user profiles with the ability to update names and profile images.
+* **Pricing Logic**: Advanced sorting functionality based on animal price.
+* **Responsive UI**: Optimized layout for mobile, tablet, and desktop devices using Tailwind CSS.
 
-https://i.ibb.co.com/4ZztnV8M/sheep-1.jpg
+## Animal Inventory
+The platform features a curated list of livestock categorized by type:
+* **Large Animals**: Premium Cows and Camels.
+* **Small Animals**: Healthy Goats and Sheep.
+* **Details**: Each listing includes weight, age, breed, and location.
 
-https://i.ibb.co.com/PfTRTCw/sheep-2.jpg
+## Technology Stack
+* **Frontend**: Next.js, React.js
+* **Styling**: Tailwind CSS
+* **Auth**: BetterAuth
+* **Icons**: React Icons, Gravity UI Icons
+* **Deployment**: Vercel
 
-https://i.ibb.co.com/p6rBdTbc/brown-cow-3.jpg
-
-https://i.ibb.co.com/xKKwmKFC/cow-big-4-1.jpg
-
-https://i.ibb.co.com/PGfvtSF5/camel-1.jpg
-
-https://i.ibb.co.com/Nn2yHHfg/cammel-2.jpg
-
-https://i.ibb.co.com/qMps2cnP/white-cow-1.jpg
-
-
-
-
+## Installation
+1. Clone the repository.
+2. Run `npm install` to install dependencies.
+3. Configure environment variables for BetterAuth.
+4. Execute `npm run dev` to start the local server.

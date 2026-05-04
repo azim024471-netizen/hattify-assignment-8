@@ -10,11 +10,8 @@ const NavBar = () => {
  const userData = authClient.useSession();
   const user = userData.data?.user;
   
-  console.log(user, 'this is logged user')
- 
     const handleSignOut = async () => {
     await authClient.signOut();
-
     
   }
 
@@ -30,20 +27,16 @@ const NavBar = () => {
             
         },
     ];
-
-
-
     return (
         <div className=" bg-green-100 w-full  ">
-          
 
-          <div className='w-13/16 mx-auto'>
-     <header className="flex h-16 items-center justify-between px-6">
-    <div className="flex items-center gap-3">
+          <div className='max-w-7xl mx-auto px-4'>
+<header className="flex flex-col md:flex-row h-auto md:h-16 items-center justify-between px-4
+ md:px-6 gap-3 md:gap-0">    <div className="flex items-center gap-3">
       <p className="font-bold text-2xl md:text-4xl"> HattiFY</p>
+     
     </div>
-
-    <ul className="flex items-center gap-4">
+    <ul className="flex flex-wrap justify-center md:justify-start items-center gap-3 md:gap-4">
            {
         linkInfo.map((link,index) =>{
             const isActive = link.path === pathName;
@@ -56,33 +49,24 @@ const NavBar = () => {
         })
       }
     </ul>
-
       <div>
 
       {
-        !user && (<div  className="flex items-center gap-4">
+        !user && (<div className="flex flex-wrap justify-center items-center gap-2 md:gap-4">
 
    <Link className='text-black font-bold ' href={'/auth/login'}>
-  
     Sign In
-  
      </Link>
 
      <Link className='bg-green-800 text-white font-bold px-3 py-2 rounded-sm' href={'/auth/signup'}>
   
     Sign Up
-  
     </Link>
-
-      
+ 
     </div>)
       }
-       
-
-         
-
     {user && (
-            <div className="flex justify-center items-center  gap-3">
+            <div className="flex justify-center items-center gap-1.5 md:gap-3">
 
              <div className='flex flex-col items-center '>
   <Avatar size="md">
@@ -107,10 +91,7 @@ const NavBar = () => {
             </div>
           )}
 
-
-
       </div>
-
 
   </header>
  </div>
