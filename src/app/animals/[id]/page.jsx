@@ -1,3 +1,4 @@
+import { PlaceBookingNow } from '@/app/components/bookingmodal/PlaceBookingNow';
 import Image from 'next/image';
 import React from 'react';
 import { FaMapLocationDot, FaWeightScale } from 'react-icons/fa6';
@@ -86,14 +87,10 @@ const DetailsPage = async ({ params }) => {
                         </p>
                     </div>
 
-
                     <div className="pt-6">
 
-                        
-                        <button className="w-full bg-green-900 hover:bg-green-700 text-white font-bold py-4 
-                        rounded-2xl transition-all shadow-xl hover:-translate-y-1 active:scale-95 text-xl">
-                            Place Booking Now
-                        </button>
+
+                        <PlaceBookingNow></PlaceBookingNow>
 
                     </div>
                 </div>

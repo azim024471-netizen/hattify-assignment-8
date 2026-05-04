@@ -26,10 +26,6 @@ const SignUpPage = () => {
             callbackURL: "/",
         })
 
-        //   console.log('lets  get the data', {data, error})
-
-        //     // alert(`Form submitted with: ${JSON.stringify(data, null, 2)}`);
-        //     alert('sign up sussess congrats' )
 
         if (error) {
             toast.error("Error: " + (error.message || "Something went wrong!"));

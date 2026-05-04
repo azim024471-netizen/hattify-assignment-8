@@ -20,6 +20,19 @@ const Animals = async () => {
             <div>
 
    <h1 className="text-2xl font-bold m-4">All Animals</h1>
+
+             <div className="my-6  ">
+
+                <select defaultValue="Short By"
+                 className="select border bg-green-100 border-gray-200 rounded-xl shadow-md px-5 py-2.5" >
+
+                    <option value="All">Short By </option>
+                    <option>From High Price</option>
+                    <option>From Low Price</option>
+                    
+                </select>
+   
+            </div>
    
             </div>
 
