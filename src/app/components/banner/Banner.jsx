@@ -4,15 +4,14 @@ import { IoMdCloudDone } from "react-icons/io";
 
 const Banner = () => {
   return (
-    <div className="bg-[url('https://i.ibb.co.com/hxt4v9W1/banner-Hatti-Fy.jpg')] h-[50vh] md:h-[70vh] w-full 
+    <div className="bg-[url('https://i.ibb.co.com/hxt4v9W1/banner-Hatti-Fy.jpg')] min-h-[50vh] md:h-[70vh] w-full 
     bg-cover bg-no-repeat bg-center flex items-center   overflow-hidden ">
       
       <div className="w-full h-full bg-black/60 flex items-center">
         <div className="max-w-7xl mx-auto px-6 md:px-12 text-white space-y-5">
           
           <div>
-            <h1 className="text-4xl md:text-6xl font-extrabold mb-4 md:max-w-3xl leading-tight">
-            Secure & <span className="text-green-500">Healthy </span> <span className= " md:text-green-500" >Animals</span> for Your Sacred Sacrifice
+<h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold mb-3 md:mb-4 max-w-full md:max-w-3xl leading-snug md:leading-tight">            Secure & <span className="text-green-500">Healthy </span> <span className= " md:text-green-500" >Animals</span> for Your Sacred Sacrifice
           </h1>
           
           <p className="text-lg md:text-2xl mb-8 max-w-xl text-gray-300 font-medium">
