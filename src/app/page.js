@@ -5,7 +5,7 @@ import FeaturedAnimals from "./components/featured/FeaturedAnimals";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-green-100 font-sans">
+    <div className="flex flex-col flex-1 items-center justify-center font-sans">
      <Banner></Banner>
          <FeaturedAnimals></FeaturedAnimals>
     </div>
