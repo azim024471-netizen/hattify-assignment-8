@@ -1,6 +1,7 @@
 'use client'
 import { authClient } from '@/lib/auth-client';
 import { Button, Card, Checkbox, Description, FieldError, Form, Input, Label, TextField } from '@heroui/react';
+import Link from 'next/link';
 import React from 'react';
 import { FcGoogle } from 'react-icons/fc';
 import { toast } from 'react-toastify';
@@ -40,9 +41,6 @@ const LoginPage = () => {
 
             <Form className="w-full flex flex-col gap-4"  onSubmit={onSubmit}>
 
-          
-
-              
 
       <TextField
         isRequired
@@ -111,7 +109,17 @@ const LoginPage = () => {
       </Button>
       
     </div>
-   
+          
+           <div className=" items-center justify-center text-sm gap-3.5 flex font-medium text-gray-600">
+          <p>Dont't Have An Account ?</p>
+        <Link  href={'/auth/signup'} className="text-red-500  hover:underline"> 
+        Register
+        </Link>
+
+        </div>
+
+
+
        </Card> 
         </div>
     );

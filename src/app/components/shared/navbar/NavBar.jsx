@@ -14,6 +14,8 @@ const NavBar = () => {
  
     const handleSignOut = async () => {
     await authClient.signOut();
+
+    
   }
 
      const pathName = usePathname();   
