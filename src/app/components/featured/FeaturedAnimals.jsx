@@ -2,8 +2,6 @@ import React from 'react';
 import FeaturedCard from './FeaturedCard';
 
 
-
-
 const FeaturedAnimals = async () => {
   
     const res = await fetch('https://hattify-assignment-8.vercel.app/data.json');
@@ -14,9 +12,6 @@ const FeaturedAnimals = async () => {
     const animals = await res.json();
      
       const featuredAnimals = animals.slice(0, 4)
-
-    // console.log(featuredAnimals)
-
 
     return (
           <div className=' my-10 container'>

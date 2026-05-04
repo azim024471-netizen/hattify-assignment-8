@@ -103,7 +103,7 @@ const NavBar = () => {
         Profile
       </Button></Link>
 
-              <Button onClick={handleSignOut} size="sm" variant="danger">SignOut</Button>
+             <Link href={'/auth/login'}> <Button onClick={handleSignOut} size="sm" variant="danger">SignOut</Button></Link>
             </div>
           )}
 

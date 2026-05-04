@@ -1,17 +1,13 @@
 import React from 'react';
 import FeaturedCard from '../components/featured/FeaturedCard';
 
-
-
 const Animals = async () => {
-
-
     const res = await fetch('https://hattify-assignment-8.vercel.app/data.json');
     // const res = await fetch('http://localhost:3000/data.json');
 
 
     const animals = await res.json();
-     
+    const short = animals.sort((a, b) => a.price - b.price);
     console.log(animals)
 
 
@@ -37,7 +33,7 @@ const Animals = async () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-5">
-                {animals.map(animal => <FeaturedCard key={animal.id} animal={animal}></FeaturedCard>)}
+                {short.map(animal => <FeaturedCard key={animal.id} animal={animal}></FeaturedCard>)}
             </div>
         </div>
     );

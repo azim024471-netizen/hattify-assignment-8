@@ -23,8 +23,6 @@ const LoginPage = () => {
     rememberMe: true,
     callbackURL: "/",
 });
-
-// 
         if (error) {
             toast.error(error.message || "Login failed! Please check your credentials.");
         } else {
@@ -33,6 +31,13 @@ const LoginPage = () => {
 
       
   };
+
+   const handleGoogleSignIn=async ()=>{
+          const data = await authClient.signIn.social({
+      provider: "google",
+    });
+  
+      }
 
     return (
            <div className='mx-auto w-full max-w-md px-4 bg-gray-50 rounded-xl py-10 my-5 flex justify-center'>
@@ -103,7 +108,7 @@ const LoginPage = () => {
 
        <div className="w-full flex flex-col my-2  md:my-4 gap-3">
 
-      <Button className="w-full py-2" variant="tertiary">
+      <Button onClick={handleGoogleSignIn} className="w-full py-2" variant="tertiary">
         <FcGoogle />
         Sign in with Google
       </Button>

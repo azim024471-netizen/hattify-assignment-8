@@ -6,15 +6,13 @@ import { FcGoogle } from 'react-icons/fc';
 import { toast } from 'react-toastify';
 
 const SignUpPage = () => {
-
+  
     const onSubmit = async (e) => {
         e.preventDefault();
 
         const formData = new FormData(e.currentTarget);
-
         const userData = Object.fromEntries(formData.entries())
 
-        console.log('ok done', userData)
 
         const { name, email, password, image } = userData;
 
@@ -26,7 +24,6 @@ const SignUpPage = () => {
             callbackURL: "/",
         })
 
-
         if (error) {
             toast.error("Error: " + (error.message || "Something went wrong!"));
         } else {
@@ -34,9 +31,18 @@ const SignUpPage = () => {
         }
 
 
-
     };
 
+
+    const handleGoogleSignIn=async ()=>{
+        const data = await authClient.signIn.social({
+    provider: "google",
+  });
+
+    }
+
+
+    
     return (
 
         <div className='mx-auto w-full max-w-md px-4 bg-gray-50 rounded-xl py-10 my-5 flex justify-center'>
@@ -135,7 +141,9 @@ const SignUpPage = () => {
                 <p className="text-center  md:text-xl ">Or</p>
                 <div className="w-full flex flex-col my-2  md:my-4 gap-3">
 
-                    <Button className="w-full py-2" variant="tertiary">
+
+
+                    <Button onClick={handleGoogleSignIn} className="w-full py-2" variant="tertiary">
                         <FcGoogle />
                         Sign in with Google
                     </Button>
