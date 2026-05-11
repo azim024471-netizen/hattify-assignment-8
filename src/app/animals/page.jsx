@@ -1,30 +1,33 @@
-import React from 'react';
-import FeaturedCard from '../components/featured/FeaturedCard';
+// 'use client'
+// import { useState } from 'react';
+// import FeaturedCard from '../components/featured/FeaturedCard';
+import AllAnimals from '../components/animals/AnimalCard';
 
-const Animals = async () => {
-    const res = await fetch('https://hattify-assignment-8.vercel.app/data.json');
+const Animals = async () => {    
+    const res = await fetch('http://localhost:3000/data.json');
+    // const res = await fetch('https://hattify-assignment-8.vercel.app/data.json');
+     const animals= await res.json(); 
+     
 
 
-    const animals = await res.json();
-    const short = animals.sort((a, b) => a.price - b.price);
-    console.log(animals)
-
-
+       
     return (
         <div className='container mx-auto'>
             <div>
 
    <h1 className="text-2xl font-bold m-4">All Animals</h1>
-             <div className="my-6 ">
             </div>
-   
-            </div>
+       <AllAnimals animals={animals}>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-5">
-                {short.map(animal => <FeaturedCard key={animal.id} animal={animal}></FeaturedCard>)}
-            </div>
+       </AllAnimals>
+
+
         </div>
     );
 };
 
 export default Animals;
+
+
+
+
