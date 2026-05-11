@@ -1,27 +1,27 @@
-import { Suspense } from "react";
-import UsersList from "../components/user/UsersList";
+// import { Suspense } from "react";
+// import UsersList from "../components/user/UsersList";
 
   
-const getuser = async ()=> {
-    const res = await fetch ('http://localhost:4444/users');
+// const getuser = async ()=> {
+//     const res = await fetch ('http://localhost:4444/users');
 
-    return res.json()
-}
+//     return res.json()
+// }
 
-const UserPage = () => {
+// const UserPage = () => {
    
-    const userPromise = getuser();
+//     const userPromise = getuser();
      
-    return (
-        <div>
-            <h2>Users with suspencr</h2>
-            <Suspense fallback={<div>Loading.......</div>}>
-            <UsersList userPromise={userPromise}>
+//     return (
+//         <div>
+//             <h2>Users with suspencr</h2>
+//             <Suspense fallback={<div>Loading.......</div>}>
+//             <UsersList userPromise={userPromise}>
 
-            </UsersList>
-             </Suspense>
-        </div>
-    );
-};
+//             </UsersList>
+//              </Suspense>
+//         </div>
+//     );
+// };
   
-export default UserPage;
+// export default UserPage;
