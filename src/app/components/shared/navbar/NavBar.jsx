@@ -22,14 +22,12 @@ import { CgProfile } from 'react-icons/cg';
             
         },
     ];
-
 const NavBar = () => {
  const [open, setOpen] = useState(false);
 
  const userData = authClient.useSession();
   const user = userData.data?.user;
   
-
      const pathName = usePathname();   
 
      
@@ -38,7 +36,7 @@ const NavBar = () => {
         setOpen(false);
     };
 
-   
+
     return (
         <div className=" bg-green-100 w-full sticky top-0 z-50   ">
 
@@ -86,7 +84,6 @@ href={'/auth/signup'}>Sign Up</Link>
     </div>)
       }
 
-
          {/* user //////////////////////////////////////////////// */}
 <div className='flex justify-center items-center gap-5 '>
 
@@ -133,12 +130,10 @@ href={'/auth/signup'}>Sign Up</Link>
 
   <ul
     className={`md:hidden absolute duration-1000 
-    top-18 flex  w-full px-4  justify-end-safe  bg-green-800 text-xl text-white
+    top-18 flex  w-full px-4  justify-end-safe bg-green-800 text-xl text-white
     ${open ? 'right-0' : 'right-full'}
     `}
   >
-
-
 
     {
   user && (
